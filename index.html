@@ -5,10 +5,10 @@
 
 <script>
 var data = JSON.stringify({
-  "id": "YOUR_ID",
-  "token": "YOUR_TOKEN",
+  "id":  document.getElementById("user"),
+  "token": document.getElementById("token"),
   "sender": "Tagget",
-  "body": "Hello world",
+  "body": document,getElementById("body"),
   "to": "+18397536474 "
 });
 
@@ -28,7 +28,27 @@ xhr.setRequestHeader("cache-control", "no-cache");
 xhr.send(data);
 </script>
 <body>
-getting started
+  <form action="#" method="get" id="myForm">
+      
+    <input  id="user" type="text" name="textfield">
+    Textfield
+    <br/>
+    
+    <input id ="token"  name="token" />
+    Numberfield
+    <br/>
+    
+  
+    <textarea id="body" name="textarea"></textarea>
+    Textarea
+    <br/>
+    
+    <hr/>
+    <button id="_save">Save</button>
+    <button id="_load">Load</button>
+    <input type="reset">
+      
+    </form>
 </body>
   
   
