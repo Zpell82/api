@@ -4,7 +4,17 @@
 
 
 <html>
+<head>
 
+  <Script>
+    fetch('https://jsonplaceholder.typcode.com/users').then(response => { 
+      return response.json();
+    })
+    .then(users => {
+      console.log(users);
+    });
+  </Script>
+</head>
 <body>
 <p>
   <b>another push</b>
