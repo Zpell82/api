@@ -3,55 +3,13 @@
 
 
 
-<script>
-var data = JSON.stringify({
-  "id":  document.getElementById("user"),
-  "token": document.getElementById("token"),
-  "sender": "Tagget_add",
-  "body": document.getElementById("body_tag"),
-  "to": "+18397536474 "
-});
+<html>
 
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === 4) {
-    console.log(this.responseText);
-  }
-});
-
-xhr.open("POST", "https://api.tagget.io/engage/send_sms");
-xhr.setRequestHeader("content-type", "application/json");
-xhr.setRequestHeader("cache-control", "no-cache");
-
-xhr.send(data);
-</script>
 <body>
-  <form action="#" method="get" id="myForm">
-      
-    <input  id="user" type="text" name="textfield">
-    Textfield
-    <br/>
-    
-    <input id ="token"  name="token" />
-    Numberfield
-    <br/>
-    
-  
-    <textarea id="body_tag" name="textarea"></textarea>
-    Textarea
-    <br/>
-    
-    <hr/>
-    <button id="_save">Save</button>
-    <button id="_load">Load</button>
-    <input type="reset">
-      
-    </form>
+<p>
+  <b>another push</b>
+</p>
+
 </body>
-  
-  
-  
-  
-  </html>
+
+</html>
