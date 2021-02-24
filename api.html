@@ -1,0 +1,32 @@
+<html>
+
+
+
+
+<script>
+var data = JSON.stringify({
+  "id": "YOUR_ID",
+  "token": "YOUR_TOKEN",
+  "sender": "Tagget",
+  "body": "Hello world",
+  "to": "+18397536474 "
+});
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "https://api.tagget.io/engage/send_sms");
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("cache-control", "no-cache");
+
+xhr.send(data);
+<\script>
+<body>
+getting started
+</body>
